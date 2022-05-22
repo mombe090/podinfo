@@ -1,0 +1,15 @@
+# Default values for podinfo.
+
+replicaCount: 5
+
+image:
+  repository: nginx
+  tag: 1.19
+  pullPolicy: IfNotPresent
+
+# Kubernetes Service settings
+service:
+  type: NodePort
+  httpPort: 80
+  externalPort: 80
+  nodePort: 32500

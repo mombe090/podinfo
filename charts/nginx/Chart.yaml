@@ -1,0 +1,6 @@
+apiVersion: v2
+version: 0.1.0
+appVersion: 1.19
+name: nginx-fluxcd
+type: application
+description: Podinfo Helm chart for Kubernetes
