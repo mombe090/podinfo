@@ -2,7 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: {{ template "podinfo.fullname" . }}
-  namespace: {{ .Values.namespace }}
   labels:
     {{- include "podinfo.labels" . | nindent 4 }}
 spec:
